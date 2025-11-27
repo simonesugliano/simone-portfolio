@@ -1,26 +1,115 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Sfondi e palette globali */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-bg: #0a0a0a;
+  --color-text: #ffffff;
+  --color-neon: #b0ff00;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
 }
+@keyframes scan {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(200%);
+  }
+}
+
+.animate-scan {
+  animation: scan 2s linear infinite;
+}
+
+.hero-text {
+  text-shadow: 
+    0 0 6px rgba(0,0,0,0.6),
+    0 0 12px rgba(0,0,0,0.4);
+}
+.mt{
+  margin-top: 40vh;
+}
+
+.section-separator {
+  opacity: 0;
+  transform: scaleX(0.3);
+  transform-origin: center;
+  transition: all 2.2s ease;
+}
+
+.section-separator.visible {
+  opacity: 1 !important;
+  transform: scaleX(1) !important;
+}
+
+/* Sezione invisibile all'inizio */
+.section-fade {
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 2.0s ease-out, transform 0.35s ease-out;
+}
+
+/* Quando entra */
+.section-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.section-title {
+  text-shadow: 0 0 6px #177c1786;
+  transition: text-shadow 1.0s ease-out;
+}
+
+.section-title.visible {
+  text-shadow: 0 0 10px #102b0bc9;
+}
+
+
+.card-smooth {
+  transition: 
+    transform 0.22s ease,
+    box-shadow 0.45s ease-out,
+    border-color 0.35s ease-out;
+}
+
+.card-smooth:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 30px #39ff14aa;
+  border-color: #39ff14;
+}
+
+
+/* SLIDE-DOWN + FADE */
+.section-slide-down {
+  opacity: 0;
+  transform: translateY(-12px);
+  transition:
+    opacity 3s ease-out,
+    transform 3s ease-out;
+}
+
+.section-slide-down.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mobile */
+@media (max-width: 366px) {
+  .hero-text{
+    margin-top: 55vh;
+  }
+  #about{
+    margin-top:20vh;
+  }
+  }
