@@ -117,85 +117,57 @@ export default function Home() {
 
 
 
-
-      {/* HERO */}
-      <header
-        className="    section-slide-down
-
-          relative h-[80vh] flex items-center justify-center text-center px-6
-          text-white bg-contain bg-no-repeat bg-center bg-black
-        "
-        style={{ backgroundImage: "url('/heroPortfolio.webp')" }}
-      >
-        {/* MINI NAV SUPER MINIMALE VISIBILE */}
+{/* NAVBAR FISSA */}
 <nav
   className="
-    absolute top-8 left-0 right-0
+    fixed top-0 left-0 right-0 z-50
     flex flex-wrap justify-center gap-x-8 gap-y-2
-    text-[clamp(0.7rem, 2.8vw, 1rem)]
-    font-medium text-gray-300
-    section-slide-down
+    py-4
+    bg-black/40 backdrop-blur-md
+    text-[clamp(0.75rem,2.5vw,1rem)]
+    font-medium text-gray-200
   "
 >
-  <a
-    href="#about"
-    className="
-      hover:text-[#39FF14]
-      transition-all duration-300
-    "
-  >
-    Chi Sono
-  </a>
-
-  <a
-    href="#portfolio"
-    className="
-      hover:text-[#39FF14]
-      transition-all duration-300
-    "
-  >
-    Progetti
-  </a>
-
-  <a
-    href="#collaborazioni"
-    className="
-      hover:text-[#39FF14]
-      transition-all duration-300
-    "
-  >
-    Per la tua attività
-  </a>
-
-  <a
-    href="#contatti"
-    className="
-      hover:text-[#39FF14]
-      transition-all duration-300
-    "
-  >
-    Contatti
-  </a>
+  <a href="#about" className="hover:text-[#39FF14] transition">Chi Sono</a>
+  <a href="#portfolio" className="hover:text-[#39FF14] transition">Progetti</a>
+  <a href="#collaborazioni" className="hover:text-[#39FF14] transition">Per la tua attività</a>
+  <a href="#contatti" className="hover:text-[#39FF14] transition">Contatti</a>
 </nav>
 
+{/* HERO */}
+<header
+  className="
+    section-slide-down relative w-full
+    flex items-center justify-center text-center px-6
+    text-white bg-black
 
-        <div className="max-w-3xl mx-auto hero-text mt section-fade">
-          <h1 className="section-title text-[clamp(2.5rem,6vw,4.5rem)]
-            font-extrabold tracking-tight">
-            Simone Sugliano
-          </h1>
+    mt-[60px]
+    pt-[80px]           /* spazio per navbar */
+    pb-16                /* spazio sotto per non tagliare il testo */
 
-          <h2 className="mt-3 text-[clamp(1.4rem,3vw,2.1rem)]
-            font-bold section-title">
-            Web Developer &amp; Problem Solver
-          </h2>
+    bg-[url('/heroPortfolio.webp')]
+    bg-top bg-no-repeat bg-contain
 
-          <p className="mt-6 text-lg md:text-xl text-gray-200 leading-relaxed section-fade">
-            Sviluppo siti moderni, veloci e ottimizzati. Creo soluzioni reali per problemi reali.
-          </p>
-          
-        </div>
-      </header>
+    [@media(max-width:350px)]:bg-[url('/heroSmartphone.webp')]
+    [@media(max-width:350px)]:bg-cover
+    [@media(max-width:350px)]:bg-center
+  "
+>
+  <div className="max-w-3xl mx-auto section-fade">
+    <h1 className="text-[clamp(2.2rem,6vw,4rem)] font-extrabold tracking-tight">
+      Simone Sugliano
+    </h1>
+
+    <h2 className="mt-3 text-[clamp(1.2rem,4vw,2rem)] font-bold">
+      Web Developer &amp; Problem Solver
+    </h2>
+
+    <p className="mt-6 text-[clamp(1rem,3vw,1.25rem)] text-gray-200 leading-relaxed">
+      Sviluppo siti moderni, veloci e ottimizzati.
+      Creo soluzioni reali per problemi reali.
+    </p>
+  </div>
+</header>
 
 
       {/* SEPARATORE */}
