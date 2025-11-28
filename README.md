@@ -1,98 +1,72 @@
 # Portfolio – Simone Sugliano
 
-## Portfolio personale sviluppato con Next.js 14, progettato per essere veloce, responsive e ottimizzato SEO.
-Il sito presenta i miei progetti reali, una pagina About completa e un design moderno e minimale.
+Portfolio personale sviluppato con **Next.js 14**, progettato per essere veloce, accessibile, responsive e ottimizzato per la SEO.  
+Il sito raccoglie i miei progetti reali, una pagina About dettagliata e un design moderno e professionale.
 
-###Tecnologie utilizzate
+---
 
-Next.js 14 (App Router)
+## Tecnologie utilizzate
 
-React
+- Next.js 14 (App Router)  
+- React  
+- TypeScript  
+- Tailwind CSS  
+- Framer Motion  
+- Next Metadata API  
+- Open Graph / JSON-LD  
+- Deploy su Vercel  
 
-TypeScript
+---
 
-Tailwind CSS
+## Funzionalità principali
 
-Framer Motion (animazioni)
+### Design
+- Tema scuro minimale  
+- Dettagli verde neon  
+- Effetti glow sui titoli  
+- Animazioni fluide con Framer Motion  
+- Layout completamente responsive  
+- Hero con doppia immagine ottimizzata  
 
-Next Metadata API
+### Contenuti
+- Homepage con presentazione professionale  
+- Pagina About con percorso e competenze  
+- Sezione Projects con pagine dedicate per ogni progetto contenenti:  
+  - Descrizione  
+  - Obiettivi  
+  - Funzionalità implementate  
+  - Dettagli tecnici  
+  - Screenshot ottimizzati  
 
-JSON-LD (SEO avanzata)
+### SEO
+- Metadata generati tramite Next Metadata API  
+- Open Graph completo  
+- Schema JSON-LD (Person + WebSite)  
+- Struttura ottimizzata per l’indicizzazione  
 
-Deploy su Vercel
+---
 
-### Funzionalità principali
-Design
+## Installazione
 
-Tema scuro minimal
+Per sviluppatori o revisori tecnici che vogliono eseguire il progetto in locale.
 
-Dettagli verde neon
-
-Effetti glow e animazioni morbide
-
-Layout completamente responsive
-
-Hero con doppia immagine ottimizzata
-
-Contenuti
-
-Homepage con presentazione professionale
-
-Pagina About con percorso, competenze e visione
-
-Sezione Projects con pagine dedicate, ciascuna contenente:
-
-Descrizione del progetto
-
-Obiettivi
-
-### Funzionalità implementate
-
-Screenshot ottimizzati
-
-Approfondimento tecnico
-
-SEO
-
-Metadata avanzati tramite API di Next
-
-Open Graph completo
-
-JSON-LD (Person + WebSite)
-
-Struttura pulita e ottimizzata per l'indicizzazione
-
-### Installazione
-
-#### Clona il repository:
-
+`bash
 git clone https://github.com/tuo-username/tuo-portfolio.git
 cd tuo-portfolio
-
-
-#### Installa le dipendenze:
-
 npm install
-
-
-#### Avvia l’ambiente di sviluppo:
-
 npm run dev
+Apri nel browser: http://localhost:3000
 
+---
 
-#### Apri: http://localhost:3000
-
-#### Build e Deploy
-
-#### Build di produzione:
+## Build di produzione
 
 npm run build
 
 
-#### Il progetto è ottimizzato per essere deployato su Vercel.
+Il progetto è ottimizzato per il deploy su Vercel.
 
-### Autore
+## Autore
 
 Simone Sugliano
 Web Developer – Frontend / WordPress / SEO
-
