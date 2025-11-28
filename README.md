@@ -51,11 +51,11 @@ Il sito raccoglie i miei progetti reali, una pagina About dettagliata e un desig
 Per sviluppatori o revisori tecnici che vogliono eseguire il progetto in locale.
 
 bash
-git clone https://github.com/simonesugliano/simone-portfolio.git
-cd simone-portfolio
-npm install
-npm run dev
-Apri nel browser: http://localhost:3000
+git clone https://github.com/simonesugliano/simone-portfolio.git  
+cd simone-portfolio  
+npm install  
+npm run dev  
+Apri nel browser: http://localhost:3000  
 
 ---
 
