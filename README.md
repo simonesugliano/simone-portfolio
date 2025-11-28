@@ -1,3 +1,6 @@
+[![Portfolio Online](https://img.shields.io/badge/Portfolio-Online-34D399?style=for-the-badge)](https://simone-portfolio-fawn.vercel.app/)
+
+
 # Portfolio – Simone Sugliano
 
 Portfolio personale sviluppato con **Next.js 14**, progettato per essere veloce, accessibile, responsive e ottimizzato per la SEO.  
