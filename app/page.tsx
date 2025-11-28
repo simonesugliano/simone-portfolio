@@ -131,9 +131,9 @@ export default function Home() {
 <nav
   className="
     absolute top-8 left-0 right-0
-    flex justify-center gap-12
-    text-[0.9rem] font-medium
-    text-gray-300
+    flex flex-wrap justify-center gap-x-8 gap-y-2
+    text-[clamp(0.7rem, 2.8vw, 1rem)]
+    font-medium text-gray-300
     section-slide-down
   "
 >
