@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio – Simone Sugliano
 
-## Getting Started
+## Portfolio personale sviluppato con Next.js 14, progettato per essere veloce, responsive e ottimizzato SEO.
+Il sito presenta i miei progetti reali, una pagina About completa e un design moderno e minimale.
 
-First, run the development server:
+###Tecnologie utilizzate
 
-```bash
+Next.js 14 (App Router)
+
+React
+
+TypeScript
+
+Tailwind CSS
+
+Framer Motion (animazioni)
+
+Next Metadata API
+
+JSON-LD (SEO avanzata)
+
+Deploy su Vercel
+
+### Funzionalità principali
+Design
+
+Tema scuro minimal
+
+Dettagli verde neon
+
+Effetti glow e animazioni morbide
+
+Layout completamente responsive
+
+Hero con doppia immagine ottimizzata
+
+Contenuti
+
+Homepage con presentazione professionale
+
+Pagina About con percorso, competenze e visione
+
+Sezione Projects con pagine dedicate, ciascuna contenente:
+
+Descrizione del progetto
+
+Obiettivi
+
+### Funzionalità implementate
+
+Screenshot ottimizzati
+
+Approfondimento tecnico
+
+SEO
+
+Metadata avanzati tramite API di Next
+
+Open Graph completo
+
+JSON-LD (Person + WebSite)
+
+Struttura pulita e ottimizzata per l'indicizzazione
+
+### Installazione
+
+#### Clona il repository:
+
+git clone https://github.com/tuo-username/tuo-portfolio.git
+cd tuo-portfolio
+
+
+#### Installa le dipendenze:
+
+npm install
+
+
+#### Avvia l’ambiente di sviluppo:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#### Apri: http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+#### Build e Deploy
 
-## Learn More
+#### Build di produzione:
 
-To learn more about Next.js, take a look at the following resources:
+npm run build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+#### Il progetto è ottimizzato per essere deployato su Vercel.
 
-## Deploy on Vercel
+### Autore
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Simone Sugliano
+Web Developer – Frontend / WordPress / SEO
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
