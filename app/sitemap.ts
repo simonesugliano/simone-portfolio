@@ -1,22 +1,38 @@
+// app/sitemap.ts
 export default function sitemap() {
+  const baseUrl = "https://simone-portfolio-fawn.vercel.app";
+
   return [
     {
-      url: "https://tuodominio.it",
+      url: `${baseUrl}/`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1.0,
     },
     {
-      url: "https://tuodominio.it/portfolio",
+      url: `${baseUrl}/about`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    // PAGINE PROGETTO
+    {
+      url: `${baseUrl}/progetti/clinica-privata`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://tuodominio.it/contatti",
+      url: `${baseUrl}/progetti/agriturismo-la-bertorella`,
       lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.5,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/progetti/progetto-artigiano`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
     },
   ];
 }
