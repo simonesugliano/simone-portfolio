@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+[![Portfolio Online](https://img.shields.io/badge/Portfolio-Online-34D399?style=for-the-badge)](https://simone-portfolio-fawn.vercel.app/)
 
-## Getting Started
 
-First, run the development server:
+# Portfolio – Simone Sugliano
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Portfolio personale sviluppato con **Next.js 14**, progettato per essere veloce, accessibile, responsive e ottimizzato per la SEO.  
+Il sito raccoglie i miei progetti reali, una pagina About dettagliata e un design moderno e professionale.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tecnologie utilizzate
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Next.js 14 (App Router)  
+- React  
+- TypeScript  
+- Tailwind CSS  
+- Framer Motion  
+- Next Metadata API  
+- Open Graph / JSON-LD  
+- Deploy su Vercel  
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Funzionalità principali
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Design
+- Tema scuro minimale  
+- Dettagli verde neon  
+- Effetti glow sui titoli  
+- Animazioni fluide con Framer Motion  
+- Layout completamente responsive  
+- Hero con doppia immagine ottimizzata  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Contenuti
+- Homepage con presentazione professionale  
+- Pagina About con percorso e competenze  
+- Sezione Projects con pagine dedicate per ogni progetto contenenti:  
+  - Descrizione  
+  - Obiettivi  
+  - Funzionalità implementate  
+  - Dettagli tecnici  
+  - Screenshot ottimizzati  
 
-## Deploy on Vercel
+### SEO
+- Metadata generati tramite Next Metadata API  
+- Open Graph completo  
+- Schema JSON-LD (Person + WebSite)  
+- Struttura ottimizzata per l’indicizzazione  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Installazione
+
+Per sviluppatori o revisori tecnici che vogliono eseguire il progetto in locale.
+
+bash
+git clone https://github.com/simonesugliano/simone-portfolio.git  
+cd simone-portfolio  
+npm install  
+npm run dev  
+Apri nel browser: http://localhost:3000  
+
+---
+
+## Build di produzione
+
+npm run build
+
+
+Il progetto è ottimizzato per il deploy su Vercel.
+
+## Autore
+
+Simone Sugliano
+Web Developer – Frontend / WordPress / SEO
