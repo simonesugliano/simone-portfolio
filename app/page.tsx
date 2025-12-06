@@ -137,23 +137,42 @@ export default function Home() {
 {/* HERO */}
 <header
   className="
-    section-slide-down relative w-full
-    flex items-center justify-center text-center px-6
-    text-white bg-black
-
-    mt-[60px]
-    pt-[80px]           /* spazio per navbar */
-    pb-16                /* spazio sotto per non tagliare il testo */
-
-    bg-[url('/heroPortfolio.webp')]
-    bg-top bg-no-repeat bg-contain
-
-    [@media(max-width:350px)]:bg-[url('/heroSmartphone.webp')]
-    [@media(max-width:350px)]:bg-cover
-    [@media(max-width:350px)]:bg-center
+    section-slide-down w-full
+    text-center text-white bg-black
+mt-[20px] md:mt-[0px]
+pt-[40px] md:pt-[0px]
   "
 >
-  <div className="max-w-3xl mx-auto section-fade">
+  <picture>
+  {/* IMMAGINE PER SMARTPHONE */}
+  <source
+    srcSet="/heroSmartphone.webp"
+    media="(max-width: 400px)"
+  />
+
+  {/* IMMAGINE PER DISPLAY MEDI (FINO A 600PX) */}
+  <source
+    srcSet="/heroTablet.webp"
+    media="(max-width: 600px)"
+  />
+
+  {/* IMMAGINE DESKTOP (DEFAULT) */}
+  <img
+    src="/heroPortfolio.webp"
+    alt="Simone Sugliano Portfolio Hero"
+    className="
+      w-full
+      mx-auto
+      object-contain
+
+    "
+  />
+</picture>
+
+
+
+  {/* TESTO SOTTO L'IMMAGINE */}
+  <div className="max-w-3xl mx-auto section-fade ">
     <h1 className="text-[clamp(2.2rem,6vw,4rem)] font-extrabold tracking-tight">
       Simone Sugliano
     </h1>
@@ -719,24 +738,33 @@ min-h-[220px] sm:min-h-[350px]
 
     {/* SOCIAL */}
     <nav
-      className="flex items-center justify-center gap-8 section-fade"
-      aria-label="Social Links"
-    >
-      <a
-        href="https://github.com/simonesugliano"
-        target="_blank"
-        className="underline text-gray-300 hover:text-[#39FF14] text-lg"
-      >
-        GitHub
-      </a>
-      <a
-        href="https://linkedin.com/in/simone-sugliano-95388022b"
-        target="_blank"
-        className="underline text-gray-300 hover:text-[#39FF14] text-lg"
-      >
-        LinkedIn
-      </a>
-    </nav>
+  className="flex items-center justify-center gap-8 section-fade"
+  aria-label="Social Links"
+>
+  <a
+    href="https://github.com/simonesugliano"
+    target="_blank"
+    className="underline text-gray-300 hover:text-[#39FF14] text-lg"
+  >
+    GitHub
+  </a>
+
+  <a
+    href="https://linkedin.com/in/simone-sugliano-95388022b"
+    target="_blank"
+    className="underline text-gray-300 hover:text-[#39FF14] text-lg"
+  >
+    LinkedIn
+  </a>
+
+  <a
+    href="https://www.facebook.com/simone.sugliano.10"
+    target="_blank"
+    className="underline text-gray-300 hover:text-[#39FF14] text-lg"
+  >
+    Facebook
+  </a>
+</nav>
 
   </div>
 </footer>
