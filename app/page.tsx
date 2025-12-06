@@ -16,18 +16,18 @@ export const metadata = {
     "SEO Tecnica",
     "Performance Web"
   ],
-  alternates: { canonical: "https://TUODOMINIO.com" },
+  alternates: { canonical: "https://simone-portfolio-fawn.vercel.app" },
 
   openGraph: {
     title: "Simone Sugliano — Web Developer & Problem Solver",
     description:
       "Sviluppo siti moderni, veloci e ottimizzati SEO. Qui trovi i miei progetti reali e il mio metodo di lavoro.",
-    url: "https://TUODOMINIO.com",
+    url: "https://simone-portfolio-fawn.vercel.app",
     siteName: "Simone Sugliano Portfolio",
     type: "website",
     images: [
       {
-        url: "https://TUODOMINIO.com/heroPortfolio.webp",
+        url: "https://simone-portfolio-fawn.vercel.app/heroPortfolio.webp",
         width: 1200,
         height: 630,
         alt: "Simone Sugliano Portfolio"
@@ -40,7 +40,7 @@ export const metadata = {
     title: "Simone Sugliano — Web Developer",
     description:
       "Portfolio ufficiale di Simone Sugliano: progetti reali, siti moderni e ottimizzati.",
-    images: ["https://TUODOMINIO.com/heroPortfolio.webp"]
+    images: ["https://simone-portfolio-fawn.vercel.app/heroPortfolio.webp"]
   },
 
   robots: {
@@ -70,8 +70,8 @@ export default function Home() {
       "@type": "Person",
       name: "Simone Sugliano",
       jobTitle: "Web Developer & Frontend Specialist",
-      url: "https://TUODOMINIO.com",
-      image: "https://TUODOMINIO.com/avatar.jpg",
+      url: "https://simone-portfolio-fawn.vercel.app",
+image: "https://simone-portfolio-fawn.vercel.app/avatar.jpg",
       sameAs: [
         "https://github.com/simonesugliano",
         "https://linkedin.com/in/simone-sugliano-95388022b"
@@ -105,10 +105,10 @@ export default function Home() {
       "@context": "https://schema.org",
       "@type": "WebSite",
       name: "Simone Sugliano Portfolio",
-      url: "https://TUODOMINIO.com",
+      url: "https://simone-portfolio-fawn.vercel.app",
       potentialAction: {
         "@type": "SearchAction",
-        target: "https://TUODOMINIO.com/?s={search_term_string}",
+        target: "https://simone-portfolio-fawn.vercel.app/?s={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     })
