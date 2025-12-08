@@ -1,6 +1,7 @@
 import ScrollAnimations from "./components/ScrollAnimations";
 import Link from "next/link";
 
+
 export const metadata = {
   title: "Simone Sugliano — Web Developer & Frontend Specialist",
   description:
@@ -131,6 +132,7 @@ image: "https://simone-portfolio-fawn.vercel.app/avatar.jpg",
   <a href="#about" className="hover:text-[#39FF14] transition">Chi Sono</a>
   <a href="#portfolio" className="hover:text-[#39FF14] transition">Progetti</a>
   <a href="#collaborazioni" className="hover:text-[#39FF14] transition">Per la tua attività</a>
+    <a href="#attestati" className="hover:text-[#39FF14] transition">Formazione</a>
   <a href="#contatti" className="hover:text-[#39FF14] transition">Contatti</a>
 </nav>
 
@@ -210,7 +212,7 @@ pt-[40px] md:pt-[0px]
       {/* =============================== */}
       <section id="about" className="section-fade mt-5 py-20 px-6 bg-black text-white">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="section-title text-4xl font-bold mb-6">Chi Sono</h2>
+          <h2 className="section-title text-4xl font-bold mb-6 section-slide-down">Chi Sono</h2>
 
           <p className="text-lg text-gray-300 leading-relaxed section-fade">
 Sono un Web Developer specializzato nello sviluppo di siti moderni, performanti e ottimizzati SEO.
@@ -231,6 +233,7 @@ Il mio obiettivo è sempre lo stesso: trasformare un’esigenza in una soluzione
       hover:shadow-[0_0_20px_#39FF14]
       hover:bg-[#39ff14d0]
       transition-all duration-300
+      section-fade
     "
   >
     Scopri di più su di me 
@@ -261,12 +264,12 @@ Il mio obiettivo è sempre lo stesso: trasformare un’esigenza in una soluzione
       {/* =============================== */}
       <section id="portfolio" className="section-fade py-24 px-6 bg-black text-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="section-title text-4xl font-bold text-center mb-16">Portfolio</h2>
+          <h2 className="section-title text-4xl font-bold text-center mb-16 section-slide-down">Portfolio</h2>
 
-          <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 section-fade">
 
             {/* CARD 1 */}
-<Link href="/progetti/clinica-privata" target="blank" className="block">
+<Link href="/progetti/clinica-privata" target="_blank" rel="noopener noreferrer" className="block">
   <article
     className="
       card-smooth
@@ -289,7 +292,7 @@ Il mio obiettivo è sempre lo stesso: trasformare un’esigenza in una soluzione
 
 
             {/* CARD 2 */}
-            <Link href="/progetti/la-bertorella" target="blank" className="block">
+            <Link href="/progetti/la-bertorella" target="_blank" rel="noopener noreferrer" className="block">
   <article
     className="
       card-smooth
@@ -312,7 +315,7 @@ Il mio obiettivo è sempre lo stesso: trasformare un’esigenza in una soluzione
 
 
             {/* CARD 3 */}
-            <Link href="/progetti/artigiano" target="blank" className="block">
+            <Link href="/progetti/artigiano" target="_blank" rel="noopener noreferrer" className="block">
   <article
     className="
       card-smooth
@@ -334,7 +337,7 @@ min-h-[220px] sm:min-h-[350px]
 
             {/* CARD 4 */}
            {/* CARD — Collaborazioni Social */}
-<Link href="/progetti/collaborazioni-social" target="blank" className="block">
+<Link href="/progetti/collaborazioni-social" target="_blank" rel="noopener noreferrer" className="block">
   <article
     className="
       card-smooth
@@ -363,7 +366,7 @@ min-h-[220px] sm:min-h-[350px]
 
             {/* CARD 5 */}
            {/* CARD — modifica WordPress */}
-<Link href="/progetti/modifica-wordpress" target="blank" className="block">
+<Link href="/progetti/modifica-wordpress" target="_blank" rel="noopener noreferrer" className="block">
   <article
     className="
       card-smooth
@@ -391,7 +394,7 @@ min-h-[220px] sm:min-h-[350px]
 </Link>
 
 {/* CARD — Cibus in Fabula */}
-<Link href="/progetti/cibus" target="blank" className="block">
+<Link href="/progetti/cibus" target="_blank" rel="noopener noreferrer" className="block">
   <article
     className="
       card-smooth
@@ -464,7 +467,7 @@ min-h-[220px] sm:min-h-[350px]
     </div>
 
     {/* CARD GRIGLIA */}
-    <div className="grid gap-8 md:grid-cols-3 max-w-5xl mx-auto">
+    <div className="grid gap-8 md:grid-cols-3 max-w-5xl mx-auto section-fade">
 
       {/* ARTITAM */}
       <article
@@ -545,6 +548,7 @@ min-h-[220px] sm:min-h-[350px]
           hover:shadow-[0_0_20px_#39FF14]
           hover:bg-[#39ff14d0]
           transition-all duration-300
+          section-fade
         "
       >
         Parliamone senza impegno
@@ -554,7 +558,21 @@ min-h-[220px] sm:min-h-[350px]
   </div>
 </section>
 
-
+{/* SEPARATORE */}
+      <div className="flex justify-center my-16">
+        <div
+          className="
+            section-separator
+            w-36 h-[3px]
+            bg-gradient-to-r
+            from-transparent via-[#39FF14]/60 to-transparent
+            rounded-full
+            opacity-0
+            scale-x-50
+            transition-all duration-[1200ms]
+          "
+        />
+      </div>
 
       {/* =============================== */}
 {/*       ALTRI PROGETTI           */}
@@ -566,7 +584,7 @@ min-h-[220px] sm:min-h-[350px]
       Altri Progetti
     </h2>
 
-    <p className="text-gray-300 text-lg leading-relaxed section-fade max-w-2xl mx-auto">
+    <p className="text-gray-300 text-lg leading-relaxed section-fade max-w-2xl mx-auto section-fade">
       Prima di arrivare ai progetti più avanzati che hai visto sopra,
       ho costruito diversi lavori più semplici ma comunque solidi.
       Ognuno di questi ha una sua storia, una sua sfida tecnica
@@ -577,10 +595,10 @@ min-h-[220px] sm:min-h-[350px]
   </div>
 
   {/* GRID DEI PROGETTI SECONDARI */}
-  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto section-fade">
 
     {/* CARD 1 */}
-    <Link href="/progetti/giardino-wp" target="blank" className="block ">
+    <Link href="/progetti/giardino-wp" target="_blank" rel="noopener noreferrer" className="block ">
   <article
     className="
       section-slide-down
@@ -604,7 +622,7 @@ min-h-[220px] sm:min-h-[350px]
 
 
     {/* CARD 2 */}
-    <Link href="/progetti/ecommerce-metal" target="blank" className="block">
+    <Link href="/progetti/ecommerce-metal" target="_blank" rel="noopener noreferrer" className="block">
   <article
     className="
       section-slide-down
@@ -628,7 +646,7 @@ min-h-[220px] sm:min-h-[350px]
 
 
     {/* CARD 3 */}
-   <Link href="/progetti/landing-page" target="blank" className="block">
+   <Link href="/progetti/landing-page" target="_blank" rel="noopener noreferrer" className="block">
   <article
     className="
       section-slide-down
@@ -652,7 +670,7 @@ min-h-[220px] sm:min-h-[350px]
 
 
     {/* CARD 4 */}
-    <Link href="/progetti/sito-cv" target="blank" className="block">
+    <Link href="/progetti/sito-cv" target="_blank" rel="noopener noreferrer" className="block">
   <article
     className="
       section-slide-down
@@ -678,6 +696,8 @@ min-h-[220px] sm:min-h-[350px]
   </div>
 </section>
 
+
+
       {/* SEPARATORE */}
       <div className="flex justify-center my-16">
         <div
@@ -695,6 +715,220 @@ min-h-[220px] sm:min-h-[350px]
       </div>
 
 
+
+{/* =============================== */}
+{/*        SEZIONE ATTESTATI        */}
+{/* =============================== */}
+
+<section id="attestati" className="section-fade py-24 px-6 bg-black text-white">
+
+  {/* INTRODUZIONE SEZIONE */}
+  <div className="max-w-4xl mx-auto text-center mb-20">
+    <h2 className="section-title text-4xl font-bold mb-4 section-slide-down">
+      Attestati & Formazione
+    </h2>
+
+    <p className="text-gray-300 text-lg leading-relaxed max-w-2xl mx-auto section-fade">
+      Percorsi strutturati, studio continuo e applicazione pratica nello sviluppo di progetti reali.
+    </p>
+  </div>
+
+  {/* =============================== */}
+  {/*      CORSI STRUTTURATI          */}
+  {/* =============================== */}
+
+  <div className="max-w-6xl mx-auto mb-24">
+
+    <div className="text-center mb-12">
+      <h3 className="text-3xl font-bold mb-2 section-slide-down ">
+        Formazione Strutturata
+      </h3>
+
+      <p className="text-gray-400 text-base max-w-2xl mx-auto section-fade">
+        Percorsi completi focalizzati su sviluppo frontend, programmazione e progettazione dell’interfaccia.
+      </p>
+    </div>
+
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 section-fade">
+
+      {/* CARD 1 */}
+      <a href="/attestati/attestFrontEnd.webp" target="_blank" rel="noopener noreferrer">
+        <article className="
+            section-slide-down
+            bg-[#0c0c0c] border border-gray-700 rounded-xl p-6
+            transition-all duration-300
+            hover:border-[#39FF14]
+            hover:shadow-[0_0_18px_#39FF1480]
+            hover:scale-[1.03]
+            cursor-pointer
+            min-h-[200px]
+        ">
+          <h3 className="text-xl font-bold mb-2">HTML-CSS-JS Avanzato</h3>
+          <p className="text-gray-400 text-sm">
+Percorso completo HTML, CSS e JavaScript: struttura semantica, layout responsive,
+stile avanzato, logica applicativa e sviluppo di interfacce web dinamiche complete.
+          </p>
+          <span className="text-[#39FF14] font-semibold text-sm mt-3 inline-block">
+            Apri attestato…
+          </span>
+        </article>
+      </a>
+
+      {/* CARD 2 */}
+      <a href="/attestati/jsUdemy.webp" target="_blank" rel="noopener noreferrer">
+        <article className="
+            section-slide-down
+            bg-[#0c0c0c] border border-gray-700 rounded-xl p-6
+            transition-all duration-300
+            hover:border-[#39FF14]
+            hover:shadow-[0_0_18px_#39FF1480]
+            hover:scale-[1.03]
+            cursor-pointer
+            min-h-[200px]
+        ">
+          <h3 className="text-xl font-bold mb-2">JavaScript Completo</h3>
+          <p className="text-gray-400 text-sm">
+Sviluppo completo in JavaScript: logica applicativa, DOM, eventi, async/await,
+fetch API, gestione dati e interazioni dinamiche per applicazioni reali.
+          </p>
+          <span className="text-[#39FF14] font-semibold text-sm mt-3 inline-block">
+            Apri attestato…
+          </span>
+        </article>
+      </a>
+
+      {/* CARD 3 */}
+      <a href="/attestati/ux-ui.webp" target="_blank" rel="noopener noreferrer">
+        <article className="
+            section-slide-down
+            bg-[#0c0c0c] border border-gray-700 rounded-xl p-6
+            transition-all duration-300
+            hover:border-[#39FF14]
+            hover:shadow-[0_0_18px_#39FF1480]
+            hover:scale-[1.03]
+            cursor-pointer
+            min-h-[200px]
+        ">
+          <h3 className="text-xl font-bold mb-2">UX / UI</h3>
+          <p className="text-gray-400 text-sm">
+             Progettazione di interfacce usabili, layout leggibili, flussi utente,
+  prototipazione e ottimizzazione dell’esperienza.
+          </p>
+          <span className="text-[#39FF14] font-semibold text-sm mt-3 inline-block">
+            Apri attestato…
+          </span>
+        </article>
+      </a>
+
+    </div>
+  </div>
+
+  {/* =============================== */}
+  {/*        FORMAZIONE CONTINUA      */}
+  {/* =============================== */}
+
+  <div className="max-w-6xl mx-auto">
+
+    <div className="text-center mb-12">
+      <h3 className="text-3xl font-bold mb-2 section-slide-down">
+        Formazione Continua
+      </h3>
+
+      <p className="text-gray-400 text-base max-w-2xl mx-auto section-fade">
+        Aggiornamento costante su tecnologie, strumenti e metodologie legate al mondo web.
+      </p>
+    </div>
+
+  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 section-fade">
+
+    {/* CARD 4 */}
+    <a href="/attestati/cssBoolean.webp" target="_blank" rel="noopener noreferrer">
+      <article className="
+          section-slide-down
+          bg-[#0c0c0c] border border-gray-700 rounded-xl p-6
+          transition-all duration-300
+          hover:border-[#39FF14]
+          hover:shadow-[0_0_18px_#39FF1480]
+          hover:scale-[1.03]
+          cursor-pointer
+          min-h-[200px]
+      ">
+        <h3 className="text-xl font-bold mb-2">Css flex / Grid</h3>
+        <p className="text-gray-400 text-sm">
+Layout avanzati con Flexbox e CSS Grid: strutture responsive, allineamenti complessi,
+griglie fluide e organizzazione professionale delle interfacce.
+        </p>
+        <span className="text-[#39FF14] font-semibold text-sm mt-3 inline-block">
+          Apri attestato…
+        </span>
+      </article>
+    </a>
+
+    {/* CARD 5 */}
+    <a href="/attestati/jsLacerba.webp" target="_blank" rel="noopener noreferrer">
+      <article className="
+          section-slide-down
+          bg-[#0c0c0c] border border-gray-700 rounded-xl p-6
+          transition-all duration-300
+          hover:border-[#39FF14]
+          hover:shadow-[0_0_18px_#39FF1480]
+          hover:scale-[1.03]
+          cursor-pointer
+          min-h-[200px]
+      ">
+        <h3 className="text-xl font-bold mb-2">Principi Javascript</h3>
+        <p className="text-gray-400 text-sm">
+Fondamenti di JavaScript: variabili, condizioni, cicli, funzioni, array e primi
+concetti di programmazione per il web.
+        </p>
+        <span className="text-[#39FF14] font-semibold text-sm mt-3 inline-block">
+          Apri attestato…
+        </span>
+      </article>
+    </a>
+
+    {/* CARD 6 */}
+    <a href="/attestati/ui-ux.webp" target="_blank" rel="noopener noreferrer">
+      <article className="
+          section-slide-down
+          bg-[#0c0c0c] border border-gray-700 rounded-xl p-6
+          transition-all duration-300
+          hover:border-[#39FF14]
+          hover:shadow-[0_0_18px_#39FF1480]
+          hover:scale-[1.03]
+          cursor-pointer
+          min-h-[200px]
+      ">
+        <h3 className="text-xl font-bold mb-2">Social Media</h3>
+<p className="text-gray-400 text-sm">
+  In aggiornamento. I certificati verranno caricati appena disponibili.
+</p>
+
+        <span className="text-[#39FF14] font-semibold text-sm mt-3 inline-block">
+          Apri attestato…
+        </span>
+      </article>
+    </a>
+
+  </div>
+</div>
+</section>
+
+{/* SEPARATORE */}
+      <div className="flex justify-center my-16">
+        <div
+          className="
+            section-separator
+            w-36 h-[3px]
+            bg-gradient-to-r
+            from-transparent via-[#39FF14]/60 to-transparent
+            rounded-full
+            opacity-0
+            scale-x-50
+            transition-all duration-[1200ms]
+          "
+        />
+      </div>
       {/* =============================== */}
       {/*            CONTATTI             */}
       {/* =============================== */}
@@ -706,7 +940,7 @@ min-h-[220px] sm:min-h-[350px]
   <div className="max-w-3xl mx-auto text-center space-y-8">
     
     {/* TITOLO */}
-    <h2 className="section-title text-4xl font-bold">Contatti</h2>
+    <h2 className="section-title text-4xl font-bold section-slide-down">Contatti</h2>
 
     {/* SOTTOTITOLO */}
     <p className="text-lg text-gray-300 leading-relaxed max-w-xl mx-auto section-fade">
@@ -744,6 +978,7 @@ min-h-[220px] sm:min-h-[350px]
   <a
     href="https://github.com/simonesugliano"
     target="_blank"
+    rel="noopener noreferrer"
     className="underline text-gray-300 hover:text-[#39FF14] text-lg"
   >
     GitHub
@@ -752,6 +987,7 @@ min-h-[220px] sm:min-h-[350px]
   <a
     href="https://linkedin.com/in/simone-sugliano-95388022b"
     target="_blank"
+    rel="noopener noreferrer"
     className="underline text-gray-300 hover:text-[#39FF14] text-lg"
   >
     LinkedIn
@@ -760,6 +996,7 @@ min-h-[220px] sm:min-h-[350px]
   <a
     href="https://www.facebook.com/simone.sugliano.10"
     target="_blank"
+    rel="noopener noreferrer"
     className="underline text-gray-300 hover:text-[#39FF14] text-lg"
   >
     Facebook
