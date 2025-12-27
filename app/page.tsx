@@ -335,9 +335,8 @@ min-h-[220px] sm:min-h-[350px]
   </article>
 </Link>
 
-            {/* CARD 4 */}
-           {/* CARD — Collaborazioni Social */}
-<Link href="/progetti/collaborazioni-social" target="_blank" rel="noopener noreferrer" className="block">
+{/* CARD — Libro Portfolio */}
+<Link href="/progetti/libro-portfolio" target="_blank" rel="noopener noreferrer" className="block">
   <article
     className="
       card-smooth
@@ -348,21 +347,23 @@ min-h-[220px] sm:min-h-[350px]
       hover:shadow-[0_0_30px_#39FF14]
       hover:scale-[1.03]
       cursor-pointer
-min-h-[220px] sm:min-h-[350px]
+      min-h-[220px] sm:min-h-[350px]
     "
   >
     <h3 className="text-2xl font-bold mb-4">
-      Collaborazioni Social & Content Creation
+      Libro Portfolio — Esperienza Web Interattiva 3D
     </h3>
 
     <p className="text-gray-300 mb-4">
-      Progetti reali di gestione contenuti per attività locali: editing foto e video,
-      ottimizzazione visual, pianificazione post e crescita presenza online.
+      Case study frontend sviluppato in HTML, CSS e JavaScript vanilla.
+      Libro 3D sfogliabile con animazioni cinematiche, rendering controllato
+      e gestione diretta del DOM senza framework.
     </p>
 
     <span className="text-[#39FF14] font-semibold">Dettagli…</span>
   </article>
 </Link>
+
 
             {/* CARD 5 */}
            {/* CARD — modifica WordPress */}
@@ -421,6 +422,33 @@ min-h-[220px] sm:min-h-[350px]
   </article>
 </Link>
 
+           {/* CARD — Collaborazioni Social */}
+<Link href="/progetti/collaborazioni-social" target="_blank" rel="noopener noreferrer" className="block">
+  <article
+    className="
+      card-smooth
+      bg-[#0c0c0c] border border-[#39FF14]/80 rounded-2xl p-8
+      shadow-[0_0_12px_#39FF14aa]
+      transition-all duration-300
+      hover:border-[#39FF14]
+      hover:shadow-[0_0_30px_#39FF14]
+      hover:scale-[1.03]
+      cursor-pointer
+min-h-[220px] sm:min-h-[350px]
+    "
+  >
+    <h3 className="text-2xl font-bold mb-4">
+      Collaborazioni Social & Content Creation
+    </h3>
+
+    <p className="text-gray-300 mb-4">
+      Progetti reali di gestione contenuti per attività locali: editing foto e video,
+      ottimizzazione visual, pianificazione post e crescita presenza online.
+    </p>
+
+    <span className="text-[#39FF14] font-semibold">Dettagli…</span>
+  </article>
+</Link>
 
           </div>
         </div>
