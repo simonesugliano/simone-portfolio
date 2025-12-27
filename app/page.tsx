@@ -751,7 +751,7 @@ min-h-[220px] sm:min-h-[350px]
 <section id="attestati" className="section-fade py-24 px-6 bg-black text-white">
 
   {/* INTRODUZIONE SEZIONE */}
-  <div className="max-w-4xl mx-auto text-center mb-20">
+ {/*  <div className="max-w-4xl mx-auto text-center mb-20">
     <h2 className="section-title text-4xl font-bold mb-4 section-slide-down">
       Attestati & Formazione
     </h2>
@@ -759,7 +759,7 @@ min-h-[220px] sm:min-h-[350px]
     <p className="text-gray-300 text-lg leading-relaxed max-w-2xl mx-auto section-fade">
       Percorsi strutturati, studio continuo e applicazione pratica nello sviluppo di progetti reali.
     </p>
-  </div>
+  </div> */}
 
   {/* =============================== */}
   {/*      CORSI STRUTTURATI          */}
@@ -773,7 +773,7 @@ min-h-[220px] sm:min-h-[350px]
       </h3>
 
       <p className="text-gray-400 text-base max-w-2xl mx-auto section-fade">
-        Percorsi completi focalizzati su sviluppo frontend, programmazione e progettazione dell’interfaccia.
+        Percorsi completi applicati allo sviluppo di interfacce e progetti reali.
       </p>
     </div>
 
@@ -863,8 +863,7 @@ fetch API, gestione dati e interazioni dinamiche per applicazioni reali.
       </h3>
 
       <p className="text-gray-400 text-base max-w-2xl mx-auto section-fade">
-        Aggiornamento costante su tecnologie, strumenti e metodologie legate al mondo web.
-      </p>
+Aggiornamento costante su tecnologie e pratiche utilizzate nei progetti.      </p>
     </div>
 
   <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 section-fade">
@@ -904,7 +903,7 @@ griglie fluide e organizzazione professionale delle interfacce.
           cursor-pointer
           min-h-[200px]
       ">
-        <h3 className="text-xl font-bold mb-2">Principi Javascript</h3>
+        <h3 className="text-xl font-bold mb-2">Principi JavaScript</h3>
         <p className="text-gray-400 text-sm">
 Fondamenti di JavaScript: variabili, condizioni, cicli, funzioni, array e primi
 concetti di programmazione per il web.
@@ -929,7 +928,8 @@ concetti di programmazione per il web.
       ">
         <h3 className="text-xl font-bold mb-2">Social Media</h3>
 <p className="text-gray-400 text-sm">
-  In aggiornamento. I certificati verranno caricati appena disponibili.
+Applicazione pratica su progetti reali.
+Certificazioni in fase di completamento.
 </p>
 
         <span className="text-[#39FF14] font-semibold text-sm mt-3 inline-block">
